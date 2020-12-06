@@ -1,0 +1,68 @@
+/*
+	jquery.paginate.css  
+	Version 0.1.1
+*/
+.paginate-pagination ul {
+	margin: 20px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.paginate-pagination ul:after {	
+	content: ' ';
+	display: table;
+	clear: both;	
+}
+
+.paginate-pagination ul > li {
+	float: left;
+	margin-right: 3px;	
+}
+
+.paginate-pagination ul > li > a.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 5px;
+    text-decoration: none;
+    color: var(--azul-escuro);
+    cursor: pointer;	
+}
+
+
+.paginate-pagination{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    max-width: 350px;
+    height: 50px;
+}
+.paginate-pagination ul > li > a.page:hover { opacity: 0.7; 
+}
+.paginate-pagination ul > li > a.page.active { opacity: 0.7; cursor: default; 
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    margin: 0 5px;
+    background: var(--azul-escuro);
+    border-radius: 50%;
+    margin-top: -10px;
+    border: 2.4px solid var(--azul-aqua);
+    box-shadow: 0px 0px 0px 1.6px var(--azul-escuro);
+    color: var(--azul-aqua);
+    cursor: pointer;
+    font-size: 25px;
+    margin: 0;
+    text-decoration: none;
+    transition: 100ms;
+}
+
+.paginate-pagination ul > li > a.page-next.deactive,
+.paginate-pagination ul > li > a.page-prev.deactive { opacity: 0.7; cursor: default; }

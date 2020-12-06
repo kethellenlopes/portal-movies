@@ -1,0 +1,165 @@
+.container-filme {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #f2f2f2;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 3px;
+}
+
+.cabecalho-filme {
+  background-color: var(--cinza-escuro);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cabecalho-filme h1 {
+  margin-left: 1.5%;
+  color: var(--azul-escuro);
+  font-size: 28px;
+}
+
+.cabecalho-filme p {
+  opacity: 0.5;
+}
+
+.informacoes-filme {
+  background: var(--cinza-claro);
+  max-width: 800px;
+  padding: 30px 30px 30px 52px;
+}
+
+@media only screen and (max-width:700px)
+{
+  .descricao-filme {
+    /* display: grid; */
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    grid-template-columns: 3fr 1fr;
+  }
+    .poster-filme.mobile {
+    display: contents;
+  }
+  .poster-filme.desktop img {
+    display: none;
+  }
+}
+@media only screen and (min-width:701px)
+{
+  .descricao-filme {
+    /* display: grid; */
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    grid-template-columns: 3fr 1fr;
+  }
+    .poster-filme.mobile img {
+    display: none;
+  }
+  .poster-filme img {
+    height: 100%;
+    width: 250px;
+    min-width: 220px;
+    max-width: 220px;
+    min-height: 330px;
+    max-height: 330px;
+}
+}
+
+
+.titulo-descricao {
+  font-size: 23px;
+  color: var(--azul-escuro);
+  margin-bottom: 5px;
+}
+
+.sinopse p {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 18.5px;
+  color: #6e6a6a;
+  padding-top: 15px;
+  padding-right: 12.9px;
+  margin-bottom: 35px;
+  border-top: solid 2px var(--azul-aqua);
+  max-width: 650px;
+}
+
+.informacoes-adicionais {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  max-width: 663px;
+  border-top: solid 2px var(--azul-aqua);
+  padding-top: 15px;
+}
+
+.informacoes-adicionais div {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.informacoes-adicionais h4 {
+  font-size: 17px;
+  color: var(--azul-escuro);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.informacoes-adicionais p {
+  font-size: 15px;
+  color: #6e6a6a;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.categoria-porcentagem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  max-width: 663px;
+  padding-bottom: 50px;
+}
+
+.porcentagem-filme-detalhes {
+  display: flex;
+  align-items: center;
+  background: var(--azul-escuro);
+  border: 5.5px solid var(--azul-aqua);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 4px var(--azul-escuro);
+}
+
+.porcentagem-filme-detalhes p {
+  font-family: "Abel", sans-serif;
+  display: flex;
+  margin: 0 auto;
+  color: var(--azul-aqua);
+  font-size: 25px;
+}
+
+/* Trailer filme */
+
+.container-trailer {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 3px;
+}
+
+.container-trailer iframe {
+  width: 1000px;
+  height: 500px;
+}

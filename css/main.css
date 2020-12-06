@@ -1,0 +1,14 @@
+:root {
+  --azul-aqua: #ffffff;
+  --azul-escuro: #e03535;
+  --branco: white;
+  --cinza-escuro: #ebebeb;
+}
+
+body {
+  background: #fff;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-somoothing: antialiased !important;
+  font-family: "Abel", "Lato", Arial, Helvetica, sans-serif;
+  touch-action: pan-x pan-y;
+}
